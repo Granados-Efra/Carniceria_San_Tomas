@@ -79,7 +79,7 @@ namespace SISTEMA_CARNICERIA
 
 
             //TextBox13.Text = mensaje; dsadsadsada
-            //TextBox14.Text = mensaje2;
+            //TextBox14.Text = mensaje2; fsadsdf
         }
     }
 }
