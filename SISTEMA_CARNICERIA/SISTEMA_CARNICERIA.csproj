@@ -70,6 +70,8 @@
     <Content Include="Address.aspx" />
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
+    <Content Include="img\carnicero.jpg" />
+    <Content Include="img\repartidor.jpg" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
     <Content Include="img\carne.png" />
@@ -84,6 +86,8 @@
     <Content Include="Pedidos.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Registro_carnicero.aspx" />
+    <Content Include="Registro_repartidor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +133,20 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_carnicero.aspx.cs">
+      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_carnicero.aspx.designer.cs">
+      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_repartidor.aspx.cs">
+      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_repartidor.aspx.designer.cs">
+      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
