@@ -78,7 +78,7 @@ namespace SISTEMA_CARNICERIA
             }
 
 
-            //TextBox13.Text = mensaje;
+            //TextBox13.Text = mensaje; dsadsadsada
             //TextBox14.Text = mensaje2;
         }
     }
