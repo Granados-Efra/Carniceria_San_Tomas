@@ -62,7 +62,7 @@ namespace SISTEMA_CARNICERIA
 
             Boolean isSuccess2 = objAccesoDir.InsertarDireccion(entidad2, ref mensaje2);
 
-            if (isSucces == true & isSuccess2 == true) 
+            if (isSucces == true && isSuccess2 == true) 
             {
 
                 Page.ClientScript.RegisterStartupScript(this.GetType(),
