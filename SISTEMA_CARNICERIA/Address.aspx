@@ -72,7 +72,7 @@
                         </div>
                     </div> 
 
-                    <div style="width:100%; display: flex;;">
+                    <div style="width:100%; display: flex;">
                         <div style="width:15%">
                              <asp:Label CssClass="etiqueta" Text="Referencia" runat="server" />
                         </div>

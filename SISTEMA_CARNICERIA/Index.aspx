@@ -18,7 +18,7 @@
             <ul>
                 <li class="logo"><a href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a href="Index.aspx">Carnicería San Tomás</a>  </li>
                 <li class="logo-central"><img src="./img/vaca.png" alt=""/></li>
-                <li class="user"><a href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
+                <li class="user"><a href="Registro.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Registro</a></li>
             </ul>
         </nav>
     </header>
