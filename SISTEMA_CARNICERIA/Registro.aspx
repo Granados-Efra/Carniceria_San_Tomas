@@ -158,7 +158,14 @@
                      <div style=" width: 100%; display:flex;">
                         
                         <div style="width:25%;">
-                                <asp:Button CssClass="btn user_btn" ID="Button1" runat="server" Text="Registrar" />                                         
+                                <asp:Button CssClass="btn user_btn" ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />                                         
+                                <br />
+                                <br />
+                                <br />
+                                <asp:TextBox ID="TextBox13" runat="server" Height="29px" Width="431px"></asp:TextBox>
+                                <br />
+                                <br />
+                                <asp:TextBox ID="TextBox14" runat="server" Height="45px" Width="438px"></asp:TextBox>
                         </div>
                      </div>
                 </div>             

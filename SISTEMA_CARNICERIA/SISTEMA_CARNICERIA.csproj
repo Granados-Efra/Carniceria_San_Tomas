@@ -137,7 +137,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ClassCapaEntidades\ClassCapaEntidades.csproj">
+      <Project>{a8a36eb7-50c4-44bc-aac0-6eae202f9020}</Project>
+      <Name>ClassCapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassCapaLogicaNegocios\ClassCapaLogicaNegocios.csproj">
+      <Project>{43415c0d-2ebb-4dfe-a18f-0fcf82913522}</Project>
+      <Name>ClassCapaLogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
