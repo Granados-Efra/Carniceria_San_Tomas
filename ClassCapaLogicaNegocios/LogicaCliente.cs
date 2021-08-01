@@ -75,6 +75,45 @@ namespace ClassCapaLogicaNegocios
             return salida;
         }
 
+        public List<EntidadesCliente> ObtenerClientes(ref string msj_salida)
+        {
+            SqlConnection conexion = null;
+
+            string query = "SELECT * FROM CLIENTE";
+
+          
+
+            conexion = objectoDeAcceso.AbrirConexion(ref msj_salida);
+
+            SqlDataReader ObtenerDatos = null;
+
+            ObtenerDatos = objectoDeAcceso.ConsultarReader(query, conexion, ref msj_salida);
+
+            List<EntidadesCliente> lista = new List<EntidadesCliente>();
+
+
+            if (ObtenerDatos!= null) 
+            {
+                while (ObtenerDatos.Read())
+                {
+                    lista.Add(new EntidadesCliente
+                    {
+                        idCliente = (int) ObtenerDatos[0],
+                        nombre = (string) ObtenerDatos[1]
+
+                    });
+                }
+            } else
+            {
+                lista = null;
+            }
+            conexion.Close();
+            conexion.Dispose();
+
+            return lista;
+
+        }
+
 
     }
 }

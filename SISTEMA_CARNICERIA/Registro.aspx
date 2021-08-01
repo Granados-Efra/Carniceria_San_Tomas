@@ -174,6 +174,9 @@
            
            <div style="width:100%; justify-content:center; display:flex;">
                <asp:DropDownList style="margin:auto; justify-content:center;" ID="DropDownList1" runat="server"></asp:DropDownList>
+               <br />
+               <br />
+               <br />
            </div>
            
            <p style="margin-top:40px; font-size:20px;">NOTA: Si la lista está vacía, significa que todavía no hay usuarios registrados, ese es un componente "DropDownList", que debe llenarse desde la base de datos. <br />

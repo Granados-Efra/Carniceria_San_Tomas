@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -22,6 +23,30 @@ namespace SISTEMA_CARNICERIA
 
                 objAccesoDir = new LogicaDireccion();
                 Session["objAccesoDir"] = objAccesoDir;
+
+                List<EntidadesCliente> mostrarClientes = null;
+
+                string msj = "";
+
+                mostrarClientes = objAccesoClient.ObtenerClientes(ref msj);
+
+                TextBox13.Text = msj;
+
+                
+
+                if (mostrarClientes!= null)
+                {
+                    DropDownList1.Items.Clear();
+
+                    foreach(EntidadesCliente client in mostrarClientes)
+                    {
+                        DropDownList1.Items.Add(new ListItem(client.nombre.ToString(), client.idCliente.ToString()));
+                    }
+                }
+                else
+                {
+                    
+                }
 
             }
             else
