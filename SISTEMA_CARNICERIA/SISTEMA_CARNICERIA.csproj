@@ -78,6 +78,9 @@
     <Content Include="img\vaca.png" />
     <Content Include="Index.aspx" />
     <Content Include="Info_user.aspx" />
+    <Content Include="js\codigo.js" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />

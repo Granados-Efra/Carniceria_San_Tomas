@@ -58,12 +58,28 @@ namespace SISTEMA_CARNICERIA
             string mensaje = "";
             string mensaje2 = "";
 
-            objAccesoClient.InsertarEmpleado(entidad, ref mensaje);
+            Boolean isSucces = objAccesoClient.InsertarEmpleado(entidad, ref mensaje);
 
-            objAccesoDir.InsertarDireccion(entidad2, ref mensaje2);
+            Boolean isSuccess2 = objAccesoDir.InsertarDireccion(entidad2, ref mensaje2);
 
-            TextBox13.Text = mensaje;
-            TextBox14.Text = mensaje2;
+            if (isSucces == true & isSuccess2 == true) 
+            {
+
+                Page.ClientScript.RegisterStartupScript(this.GetType(),
+                    "messg3B", "msgbox3('Correcto','" + mensaje + " ','success');",
+                    true);
+
+            }
+            else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(),
+                    "messg3A", "msgbox3('Algo salió mal...','" + mensaje + " ','error');",
+                    true);
+            }
+
+
+            //TextBox13.Text = mensaje;
+            //TextBox14.Text = mensaje2;
         }
     }
 }

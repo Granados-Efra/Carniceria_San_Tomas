@@ -193,12 +193,12 @@ namespace CapaAccesoDatosSQL
                 try
                 {
                     vocho.ExecuteNonQuery();
-                    mensaje = "Modificacion correcta en la base de datos";
+                    mensaje = "El registro ha sido exitoso";
                     salida = true;
                 }
                 catch (Exception w)
                 {
-                    mensaje = "Error:" + w.Message;
+                    mensaje = "Error fatal:" + w.Message;
 
                 }
                 cnab.Close();

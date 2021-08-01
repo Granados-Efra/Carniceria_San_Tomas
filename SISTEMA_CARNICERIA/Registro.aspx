@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Carnicería San Tomás</title>
     <link href="../css/profile.css" rel="stylesheet" />
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/codigo.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
 </head>
@@ -159,13 +161,7 @@
                         
                         <div style="width:25%;">
                                 <asp:Button CssClass="btn user_btn" ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />                                         
-                                <br />
-                                <br />
-                                <br />
-                                <asp:TextBox ID="TextBox13" runat="server" Height="29px" Width="431px"></asp:TextBox>
-                                <br />
-                                <br />
-                                <asp:TextBox ID="TextBox14" runat="server" Height="45px" Width="438px"></asp:TextBox>
+                               
                         </div>
                      </div>
                 </div>             
