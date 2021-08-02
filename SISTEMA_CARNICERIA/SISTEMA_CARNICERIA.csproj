@@ -70,6 +70,9 @@
     <Content Include="Address.aspx" />
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
+    <Content Include="img\carnicero.jpg" />
+    <Content Include="img\pedido.jpg" />
+    <Content Include="img\repartidor.jpg" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
     <Content Include="img\carne.png" />
@@ -78,6 +81,10 @@
     <Content Include="img\vaca.png" />
     <Content Include="Index.aspx" />
     <Content Include="Info_user.aspx" />
+    <Content Include="js\codigo.js" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\sweetalert2.all.min.js" />
+    <Content Include="Nuevo_pedido.aspx" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
@@ -104,6 +111,13 @@
     </Compile>
     <Compile Include="Info_user.aspx.designer.cs">
       <DependentUpon>Info_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo_pedido.aspx.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nuevo_pedido.aspx.designer.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pedidos.aspx.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
@@ -137,7 +151,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ClassCapaEntidades\ClassCapaEntidades.csproj">
+      <Project>{a8a36eb7-50c4-44bc-aac0-6eae202f9020}</Project>
+      <Name>ClassCapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassCapaLogicaNegocios\ClassCapaLogicaNegocios.csproj">
+      <Project>{43415c0d-2ebb-4dfe-a18f-0fcf82913522}</Project>
+      <Name>ClassCapaLogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
