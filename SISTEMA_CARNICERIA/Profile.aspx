@@ -66,7 +66,7 @@
                     Roman Antonio Isidor Guinto
                 </li>
                 <li>
-                    Pedro Apellido Apellido
+                    Pedro De La Cruz Lucas
                 </li>
                 <li>
                     Efrain Granados Rodríguez

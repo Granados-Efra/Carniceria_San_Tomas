@@ -84,7 +84,7 @@ namespace SISTEMA_CARNICERIA
             string mensaje = "";
             string mensaje2 = "";
 
-            Boolean isSucces = objAccesoClient.InsertarEmpleado(entidad, ref mensaje);
+            Boolean isSucces = objAccesoClient.InsertarCliente(entidad, ref mensaje);
 
             Boolean isSuccess2 = objAccesoDir.InsertarDireccion(entidad2, ref mensaje2);
 
@@ -111,26 +111,15 @@ namespace SISTEMA_CARNICERIA
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //List<string> sessionList = GetSessionVariable();
-            //sessionList.Add(DropDownList1.SelectedValue);
+            
         }
 
-        //private List<string> GetSessionVariable()
-        //{
-        //    var list = Session["SelectionValuesList"] as List<string>;
-
-        //    if (list == null)
-        //    {
-        //        list = new List<string>();
-        //        Session["SelectionValuesList"] = list;
-        //    }
-
-        //    return list;
-        //}
+       
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             Session["Nombres"] = DropDownList1.SelectedItem.ToString();
+            Session["ID"] = Convert.ToInt32(DropDownList1.SelectedValue);
             Server.Transfer("Profile.aspx");
         }
 

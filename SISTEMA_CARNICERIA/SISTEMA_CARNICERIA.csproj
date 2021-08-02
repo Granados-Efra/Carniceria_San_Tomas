@@ -81,6 +81,7 @@
     <Content Include="js\codigo.js" />
     <Content Include="js\JavaScript.js" />
     <Content Include="js\sweetalert2.all.min.js" />
+    <Content Include="Nuevo_pedido.aspx" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="Info_user.aspx.designer.cs">
       <DependentUpon>Info_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo_pedido.aspx.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nuevo_pedido.aspx.designer.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pedidos.aspx.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>

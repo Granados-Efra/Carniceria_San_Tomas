@@ -14,7 +14,7 @@ namespace ClassCapaLogicaNegocios
         private ClassAccesoSQL objectoDeAcceso =
            new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
 
-        public Boolean InsertarEmpleado(EntidadesCliente entidadClient, ref string mensajeSalida)
+        public Boolean InsertarCliente(EntidadesCliente entidadClient, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[5];
 
