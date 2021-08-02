@@ -14,19 +14,25 @@
 
 </head>
 <body>
+    <form id="form1" runat="server">
   <header>
         <nav>
             <ul>
                  <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                 <li class="logo-central"><img src="./img/vaca.png" alt=""/></li>
-                 <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
+                 <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a></li>
             </ul>
         </nav>
     </header>
     
     <div>
         <h1> Perfil de usuario</h1>
-        <h2> ¡Bienvenido Mario!</h2>
+        <p> 
+            &nbsp;</p>
+        <h2 id="welcome"> ¡Bienvenido  <%=Session["Nombres"].ToString()%>!</h2>
+        <p> 
+            &nbsp;</p>
+        <p> &nbsp;</p>
 
         <div style="min-width: 100%; display: flex; margin-bottom: 200px;">
 
@@ -68,5 +74,6 @@
             </ul>
         </div>
     </footer>
+    </form>
 </body>
 </html>

@@ -30,7 +30,7 @@ namespace SISTEMA_CARNICERIA
 
                 mostrarClientes = objAccesoClient.ObtenerClientes(ref msj);
 
-                TextBox13.Text = msj;
+                //TextBox13.Text = msj;
 
                 
 
@@ -41,6 +41,7 @@ namespace SISTEMA_CARNICERIA
                     foreach(EntidadesCliente client in mostrarClientes)
                     {
                         DropDownList1.Items.Add(new ListItem(client.nombre.ToString(), client.idCliente.ToString()));
+                        DropDownList1.DataBind();
                     }
                 }
                 else
@@ -106,5 +107,33 @@ namespace SISTEMA_CARNICERIA
             //TextBox13.Text = mensaje;
             //TextBox14.Text = mensaje2;
         }
+
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //List<string> sessionList = GetSessionVariable();
+            //sessionList.Add(DropDownList1.SelectedValue);
+        }
+
+        //private List<string> GetSessionVariable()
+        //{
+        //    var list = Session["SelectionValuesList"] as List<string>;
+
+        //    if (list == null)
+        //    {
+        //        list = new List<string>();
+        //        Session["SelectionValuesList"] = list;
+        //    }
+
+        //    return list;
+        //}
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session["Nombres"] = DropDownList1.SelectedItem.ToString();
+            Server.Transfer("Profile.aspx");
+        }
+
+        
     }
 }

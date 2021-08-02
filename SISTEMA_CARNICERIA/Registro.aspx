@@ -168,21 +168,20 @@
         </div>
 
 
-       <div style="display:flex; justify-content:center; flex-wrap:wrap; margin-bottom:200px;">
-           <h1 style="width:100%; justify-content:center">Iniciar sesión</h1>
-           <p>Iniciar sesión cómo:</p>
-           
-           <div style="width:100%; justify-content:center; display:flex;">
-               <asp:DropDownList style="margin:auto; justify-content:center;" ID="DropDownList1" runat="server"></asp:DropDownList>
+       <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 200px;">
+           <h1 style="width: 100%; justify-content: center">Iniciar sesión</h1>
+           <asp:Button CssClass="btn user_btn" ID="Button2" runat="server" Text="Iniciar sesión como:" OnClick="Button2_Click" />
+
+           <div style="width: 100%; justify-content: center; display: flex;">
+               <asp:DropDownList Style="margin: auto; justify-content: center;" ID="DropDownList1" runat="server" Height="48px" Width="300px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
                <br />
                <br />
                <br />
+
+
            </div>
-           
-           <p style="margin-top:40px; font-size:20px;">NOTA: Si la lista está vacía, significa que todavía no hay usuarios registrados, ese es un componente "DropDownList", que debe llenarse desde la base de datos. <br />
-               Al llenarse, trae información de la base de datos, lo más importante es el ID del usuario, con este se "inicia sesión" aunque en realidad sólo se deberá guardar el ID de dicho usuario en la variable de sesión. <br />
-               Esta es una nota para ustedes cabrones, la borran al arreglar el llenado desde la DB.
-           </p>
+
+
        </div>
         
 
