@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Carnicería San Tomás</title>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/codigo.js"></script>
     <link href="../css/profile.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
@@ -70,7 +72,7 @@
                             <a style="background:#618c61" href="Profile.aspx" class="btn user_btn">Regresar</a>  
                         </div>
                         <div style="width:25%;">
-                                <asp:Button CssClass="btn user_btn" ID="Button1" runat="server" Text="Registrar" />                                         
+                                <asp:Button CssClass="btn user_btn" ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />                                         
                         </div>
                     </div>
 

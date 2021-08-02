@@ -9,71 +9,57 @@ using System.Data;
 using System.Data.SqlClient;
 namespace ClassCapaLogicaNegocios
 {
-    public class LogicaCliente
+    public class LogicaRepartidor
+
     {
+
         private ClassAccesoSQL objectoDeAcceso =
            new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
-
-        public Boolean InsertarCliente(EntidadesCliente entidadClient, ref string mensajeSalida)
+        public Boolean InsertarRepartidor(EntidadesRepartidor entidadRepar, ref string mensajeSalida)
         {
-            SqlParameter[] parametros = new SqlParameter[5];
+            SqlParameter[] parametros = new SqlParameter[3];
 
             parametros[0] = new SqlParameter
             {
                 ParameterName = "nombre",
                 SqlDbType = SqlDbType.VarChar,
-                Size=90,
+                Size = 200,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.nombre
+                Value = entidadRepar.nombre
             };
 
             parametros[1] = new SqlParameter
-            {
-                ParameterName = "ApPat",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
-                Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoPat
-            };
-
-            parametros[2] = new SqlParameter
-            {
-                ParameterName = "ApMat",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
-                Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoMat
-
-            };
-
-            parametros[3] = new SqlParameter
             {
                 ParameterName = "celular",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 20,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.celular
+                Value = entidadRepar.celular
             };
 
-            parametros[4] = new SqlParameter
+            parametros[2] = new SqlParameter
             {
-                ParameterName = "correo",
+                ParameterName = "licencia",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 150,
+                Size = 40,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.correo
+                Value = entidadRepar.licencia
+
             };
 
+          
 
-
-            string sentencia = "insert into Cliente values(@nombre, @ApPat, @ApMat, @celular, @correo) ";
+            string sentencia = "insert into Repartidor values(@nombre, @celular, @licencia) ";
 
             Boolean salida = false;
 
             salida = objectoDeAcceso.OperacionesSQLConParametros(sentencia, objectoDeAcceso.AbrirConexion(ref mensajeSalida), ref mensajeSalida, parametros);
 
             return salida;
+
         }
+
+
 
 
     }

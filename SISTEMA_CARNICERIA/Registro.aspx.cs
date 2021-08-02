@@ -58,7 +58,7 @@ namespace SISTEMA_CARNICERIA
             string mensaje = "";
             string mensaje2 = "";
 
-            Boolean isSucces = objAccesoClient.InsertarEmpleado(entidad, ref mensaje);
+            Boolean isSucces = objAccesoClient.InsertarCliente(entidad, ref mensaje);
 
             Boolean isSuccess2 = objAccesoDir.InsertarDireccion(entidad2, ref mensaje2);
 

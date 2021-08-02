@@ -7,74 +7,62 @@ using CapaAccesoDatosSQL;
 using ClassCapaEntidades;
 using System.Data;
 using System.Data.SqlClient;
+
 namespace ClassCapaLogicaNegocios
 {
-    public class LogicaCliente
+    public class LogicaCarnicero
     {
+
         private ClassAccesoSQL objectoDeAcceso =
            new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
-
-        public Boolean InsertarCliente(EntidadesCliente entidadClient, ref string mensajeSalida)
+        public Boolean InsertarCarnicero(EntidadesCarnicero entidadCarnicero, ref string mensajeSalida)
         {
-            SqlParameter[] parametros = new SqlParameter[5];
+            SqlParameter[] parametros = new SqlParameter[4];
 
             parametros[0] = new SqlParameter
             {
                 ParameterName = "nombre",
                 SqlDbType = SqlDbType.VarChar,
-                Size=90,
+                Size = 190,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.nombre
+                Value = entidadCarnicero.nombre
             };
 
             parametros[1] = new SqlParameter
-            {
-                ParameterName = "ApPat",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
-                Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoPat
-            };
-
-            parametros[2] = new SqlParameter
-            {
-                ParameterName = "ApMat",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
-                Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoMat
-
-            };
-
-            parametros[3] = new SqlParameter
             {
                 ParameterName = "celular",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 20,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.celular
+                Value = entidadCarnicero.celular
             };
 
-            parametros[4] = new SqlParameter
+            parametros[2] = new SqlParameter
             {
                 ParameterName = "correo",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 150,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.correo
+                Value = entidadCarnicero.correo
+
             };
 
+            parametros[3] = new SqlParameter
+            {
+                ParameterName = "experiencia_anios",
+                SqlDbType = SqlDbType.SmallInt,
+                Direction = ParameterDirection.Input,
+                Value = entidadCarnicero.experiencia
+            };
 
-
-            string sentencia = "insert into Cliente values(@nombre, @ApPat, @ApMat, @celular, @correo) ";
+            string sentencia = "insert into Carnicero values(@nombre, @celular, @correo, @experiencia_anios) ";
 
             Boolean salida = false;
 
             salida = objectoDeAcceso.OperacionesSQLConParametros(sentencia, objectoDeAcceso.AbrirConexion(ref mensajeSalida), ref mensajeSalida, parametros);
 
             return salida;
+
         }
-
-
     }
 }
