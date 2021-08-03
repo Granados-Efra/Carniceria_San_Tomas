@@ -43,7 +43,15 @@
                 
                       <%--  COMIENZA EL DESPLIEGUE DE PEDIDOS EN EL SIGUIENTE DIV --%>
                 <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px; background-color:orangered;">                
-                    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
+
+                    <%--<asp:TemplaField>
+
+                    </asp:TemplaField>--%>
+                    </asp:GridView>
+                    <br />
+                    <br />
+                &nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </div>    
             
 
@@ -54,8 +62,7 @@
          <footer>   
             <div>
                 <div style="color: white; display: flex; justify-content: space-around; font-size: 20px; ">
-                    <p>Integrantes:</p>
-                </div>
+                    <p>Integrantes:</div>
                 <ul>
                     <li>
                         Roman Antonio Isidor Guinto
