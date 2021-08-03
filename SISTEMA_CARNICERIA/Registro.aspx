@@ -42,14 +42,14 @@
                    
     
 
-                <div style="width: 60%; display:flex; flex-wrap:wrap; margin-top: 60px;">  
+                <div style="width: 60%; display:flex; flex-wrap:wrap; margin-top: 60px;" >  
 
                     <div style="width:100%; display: flex">
                         <div class="etiqueta" style="width:20%">
                             <asp:Label Text="Nombre" runat="server" />  
                         </div>
-                        <div class="campo" style="width:80%">
-                            <asp:TextBox style="margin-left:20px"  ID="TextBox1" runat="server"> Nombre </asp:TextBox>
+                        <div class="campo form-group" style="width:80%">
+                            <asp:TextBox style="margin-left:20px"  CssClass="form-control-sm"  ID="TextBox1" runat="server" placeholder="Nombre"  >  </asp:TextBox>
                         </div>
                     </div>
 
@@ -57,8 +57,8 @@
                         <div class="etiqueta" style="width:20%">
                              <asp:Label Text="Apellido Paterno" runat="server" /> 
                         </div>
-                        <div class="campo" style="width:80%">
-                           <asp:TextBox style="margin-left:20px" ID="TextBox2" runat="server"> Apellido Paterno</asp:TextBox> 
+                        <div class="campo form-group" style="width:80%">
+                           <asp:TextBox  CssClass="form-control-sm"  style="margin-left:20px" ID="TextBox2" runat="server" placeholder="Apellido Paterno" > </asp:TextBox> 
                         </div>               
                     </div>   
 
@@ -66,8 +66,8 @@
                          <div class="etiqueta" style="width:20%">
                             <asp:Label Text="Apellido Materno" runat="server" /> 
                         </div>
-                        <div class="campo" style="width:80%">
-                           <asp:TextBox style="margin-left:20px" ID="TextBox3" runat="server">Apellido Materno</asp:TextBox> 
+                        <div class="campo form-group" style="width:80%">
+                           <asp:TextBox  CssClass="form-control-sm"  style="margin-left:20px" ID="TextBox3" runat="server" placeholder="Apellido Materno"></asp:TextBox> 
                         </div>         
                     </div> 
 
@@ -75,8 +75,8 @@
                          <div class="etiqueta" style="width:20%">
                             <asp:Label Text="Celular" runat="server" /> 
                         </div>
-                        <div class="campo" style="width:80%">
-                           <asp:TextBox style="margin-left:20px" ID="TextBox4" runat="server">Celular</asp:TextBox> 
+                        <div class="campo form-group" style="width:80%">
+                           <asp:TextBox  CssClass="form-control-sm"  style="margin-left:20px" ID="TextBox4" runat="server" placeholder="Celular"></asp:TextBox> 
                         </div>
                     </div> 
 
@@ -84,8 +84,8 @@
                         <div class="etiqueta" style="width:20%">
                              <asp:Label  Text="Correo Electrónico" runat="server" />
                         </div>
-                        <div class="campo" style="width:80%">
-                           <asp:TextBox  style="margin-left:20px;" ID="TextBox5" runat="server"> Correo Electrónico</asp:TextBox> 
+                        <div class="campo form-group" style="width:80%">
+                           <asp:TextBox  CssClass="form-control-sm"  style="margin-left:20px;" ID="TextBox5" runat="server" placeholder="Correo Electrónico" TextMode="Email"></asp:TextBox> 
                         </div>                       
                     </div> 
 
@@ -94,8 +94,8 @@
                         <div style="width:20%">
                             <asp:Label CssClass="etiqueta" Text="Colonia" runat="server" />  
                         </div>
-                        <div style="width:80%">
-                            <asp:TextBox CssClass="campo" style="margin-left:20px"  ID="TextBox6" runat="server"> Colonia </asp:TextBox>
+                        <div style="width:80%" class="form-group">
+                            <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px"  ID="TextBox6" runat="server" placeholder="Colonia">  </asp:TextBox>
                         </div>
                     </div>
 
@@ -103,8 +103,8 @@
                         <div style="width:20%">
                              <asp:Label CssClass="etiqueta" Text="Calle y número" runat="server" /> 
                         </div>
-                        <div style="width:80%">
-                           <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox7" runat="server"> Calle y número</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                           <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px" ID="TextBox7" runat="server" placeholder ="Calle y número"> </asp:TextBox> 
                         </div>               
                     </div>   
 
@@ -112,8 +112,8 @@
                          <div style="width:20%">
                             <asp:Label CssClass="etiqueta" Text="Municipio" runat="server" /> 
                         </div>
-                        <div style="width:80%">
-                           <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox8" runat="server">Municipio</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                           <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px" ID="TextBox8" runat="server" placeholder ="Municipio"></asp:TextBox> 
                         </div>         
                     </div> 
 
@@ -121,8 +121,8 @@
                          <div style="width:20%">
                             <asp:Label CssClass="etiqueta" Text="Ciudad" runat="server" /> 
                         </div>
-                        <div style="width:80%">
-                           <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox9" runat="server">Ciudad</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                           <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px" ID="TextBox9" runat="server" placeholder ="Ciudad"></asp:TextBox> 
                         </div>
                     </div> 
 
@@ -130,8 +130,8 @@
                         <div style="width:20%">
                              <asp:Label CssClass="etiqueta" Text="Referencia" runat="server" />
                         </div>
-                        <div style="width:80%">
-                           <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox10" runat="server"> Referencia</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                           <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px" ID="TextBox10" runat="server" placeholder="Referencia"> </asp:TextBox> 
                         </div>                       
                     </div> 
 
@@ -140,18 +140,18 @@
                         <div style="width:20%">
                             <asp:Label CssClass="etiqueta" Text="Características" runat="server" /> 
                         </div>
-                        <div style="width:80%">
-                            <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox11" runat="server" Height="59px" Width="299px"> Características de la casa, imagino</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                            <asp:TextBox CssClass="campo form-control-sm" style="margin-left:20px" ID="TextBox11" runat="server" Height="59px" Width="299px" placeholder="Características de la casa"> </asp:TextBox> 
                         </div>    
                     </div> 
 
 
                     <div style="width:100%;  display: flex;">
-                        <div style="width:20%">
+                        <div style="width:20%" >
                             <asp:Label CssClass="etiqueta" Text="CP" runat="server" /> 
                         </div>
-                        <div style="width:80%">
-                            <asp:TextBox CssClass="campo" style="margin-left:20px" ID="TextBox12" runat="server">Código Postal</asp:TextBox> 
+                        <div style="width:80%" class="form-group">
+                            <asp:TextBox CssClass=" form-control-sm" style="margin-left:20px" ID="TextBox12" runat="server" TextMode="Number" placeholder="Código Postal"></asp:TextBox> 
                         </div>
                     </div> 
 
@@ -205,5 +205,7 @@
         </footer>
 
     </form>
+
+   
 </body>
 </html>

@@ -76,7 +76,7 @@
                             <asp:Label Text="Precio final" runat="server" /> 
                         </div>
                         <div class="campo" style="width:80%">
-                           <asp:TextBox style="margin-left:20px" ID="TextBox4" runat="server">Precio final</asp:TextBox> 
+                           <asp:TextBox style="margin-left:20px" ID="TextBox4" runat="server" ReadOnly="True">Precio final</asp:TextBox> 
                         </div>
                     </div> 
 
