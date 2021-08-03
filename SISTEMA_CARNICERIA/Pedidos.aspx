@@ -21,8 +21,7 @@
                      <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                     <li class="logo-central"><img src="./img/vaca.png" alt=""/>
                      </li>
-                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
-                </ul>
+                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%>
             </nav>
         </header>
 
@@ -51,8 +50,7 @@
                     </asp:GridView>
                     <br />
                     <br />
-                &nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-                </div>    
+                &nbsp;</div>    
             
 
 

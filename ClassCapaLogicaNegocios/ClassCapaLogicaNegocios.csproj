@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogicaEntrega.cs" />
     <Compile Include="LogicaPedido.cs" />
     <Compile Include="LogicaProducto.cs" />
     <Compile Include="LogicaDireccion.cs" />

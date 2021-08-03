@@ -12,7 +12,19 @@ namespace SISTEMA_CARNICERIA
         LogicaPedido objAccessoPed = null;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            if (Session["Nombres"] != null)
+            {
+
+                string nombre = (string)Session["Nombres"];
+
+                //TextBox1.Text = nombre;
+            }
+            else
+            {
+
+            }
+
             if (IsPostBack == false)
             {
                 objAccessoPed = new LogicaPedido();
@@ -22,30 +34,7 @@ namespace SISTEMA_CARNICERIA
                 GridView1.DataSource = objAccessoPed.ObtenerPedidos(ref msj);
                 GridView1.DataBind();
 
-                
-                List<int> lista  = new List<int>();
-                List<Button> buttons = new List<Button>();
-                for (int i = 0; i < GridView1.Rows.Count; i++)
-                {
-                   
-                    lista.Add(Convert.ToInt32(GridView1.Rows[i].Cells[7].Text));
-
-                    Button newButton = new Button();
-                    buttons.Add(newButton);
-
-                    newButton.ID = GridView1.Rows[i].Cells[7].Text;
-                    this.Form.Controls.Add(newButton);
-
-
-                    //string output = string.Join(Environment.NewLine, lista.ToArray());
-
-                    //TextBox1.Text = output;
-                }
-
-
-
-
-
+         
             }
             else
             {

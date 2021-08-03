@@ -115,10 +115,8 @@
                             </asp:DropDownList>
                             <br />
                             <br />
-                            <asp:TextBox ID="TextBox6" runat="server" Width="159px"></asp:TextBox>
                             <br />
                             <br />
-                            <asp:TextBox ID="TextBox7" runat="server" Width="155px"></asp:TextBox>
                             <br />
                         </div>               
                     </div>   

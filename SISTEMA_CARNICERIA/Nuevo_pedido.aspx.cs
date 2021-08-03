@@ -15,6 +15,8 @@ namespace SISTEMA_CARNICERIA
 
         LogicaPedido objAccesoPed = null;
 
+        LogicaEntrega objAccesoEntrega = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //Si es falso se está realizando la carga por primera vez
@@ -26,13 +28,18 @@ namespace SISTEMA_CARNICERIA
                 objAccesoPed = new LogicaPedido();
                 Session["objAccesoPed"] = objAccesoPed;
 
-    
+                objAccesoEntrega = new LogicaEntrega();
+                Session["objAccesoEntrega"] = objAccesoEntrega;
+
+
             }
             else
             {
                 objAccesoProd = (LogicaProducto)Session["objAccesoProd"];
 
                 objAccesoPed = (LogicaPedido)Session["objAccesoPed"];
+
+                objAccesoEntrega = (LogicaEntrega)Session["objAccesoEntrega"];
             }
         }
 
@@ -63,24 +70,53 @@ namespace SISTEMA_CARNICERIA
 
             string msj = "";
             string msj2 = "";
+            string msj3 = "";
 
             int x = (int)Convert.ToInt32(DropDownList1.SelectedValue);
             int y = (int)Convert.ToInt32(DropDownList2.SelectedValue);
 
             if (x == 1 && y==1)
             {
-                //objAccesoPed.InsertarPedido(entidad, ref msj);
-                //objAccesoProd.InsertarProducto(entidad2, ref msj);
+                Boolean isSuccess = objAccesoPed.InsertarPedido(entidad, ref msj);
+                Boolean isSuccess2 = objAccesoProd.InsertarProducto(entidad2, ref msj2);
+                Boolean isSuccess3 = objAccesoEntrega.InsertaEntrega(ref msj3);
 
-                //TextBox6.Text = msj;
+                if (isSuccess == true && isSuccess2 == true && isSuccess3 == true)
+                {
+                    Page.ClientScript.RegisterStartupScript(this.GetType(),
+                        "messg3B", "msgbox3('Correcto','" + msj + " ','success');",
+                        true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(this.GetType(),
+                      "messg3A", "msgbox3('Algo salió mal...','" + msj + " ','error');",
+                      true);
+                }
+
+
+
+
             }
-            else
+            else if(x == 0 && y == 0)
             {
-                objAccesoPed.InsertarPedido(entidad, ref msj);
-                objAccesoProd.InsertarProducto(entidad2, ref msj2);
+               Boolean isSuccess = objAccesoPed.InsertarPedido(entidad, ref msj);
+                Boolean isSuccess2 = objAccesoProd.InsertarProducto(entidad2, ref msj2);
 
-                TextBox6.Text = msj;
-                TextBox7.Text = msj2;
+                if (isSuccess == true && isSuccess2 == true)
+                {
+
+                    Page.ClientScript.RegisterStartupScript(this.GetType(),
+                        "messg3B", "msgbox3('Correcto','" + msj + " ','success');",
+                        true);
+
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(this.GetType(),
+                        "messg3A", "msgbox3('Algo salió mal...','" + msj + " ','error');",
+                        true);
+                }
             }
           
 
