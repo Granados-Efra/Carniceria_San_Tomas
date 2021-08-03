@@ -9,3 +9,14 @@ E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\Cla
 E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.CopyComplete
 E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.dll
 E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaLogicaNegocios.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaLogicaNegocios.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\CapaAccesoDatosSQL.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaEntidades.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\CapaAccesoDatosSQL.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csprojAssemblyReference.cache
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.CopyComplete
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.pdb

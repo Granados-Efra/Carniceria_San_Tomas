@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pedidos.aspx.cs" Inherits="SISTEMA_CARNICERIA.Pedidos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pedido_especifico.aspx.cs" Inherits="SISTEMA_CARNICERIA.Pedido_especifico" %>
 
 <!DOCTYPE html>
 
@@ -21,13 +21,14 @@
                      <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                     <li class="logo-central"><img src="./img/vaca.png" alt=""/>
                      </li>
-                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%>
+                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
+                </ul>
             </nav>
         </header>
 
         <div style=" width: 100%; display:flex; justify-content:center">
             <div style="width:100%; display:flex; justify-content:center">
-                <a style="background:#618c61" href="Profile.aspx" class="btn user_btn">Regresar</a>  
+                <a style="background:#618c61" href="Pedidos.aspx" class="btn user_btn">Regresar</a>  
             </div>          
         </div>
 
@@ -45,17 +46,14 @@
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
                   
                      <Columns>
-                         <asp:templatefield headertext="Id Específico del pedido" SortExpression="[Id Especifico]">
-                        <itemtemplate>
-                          <asp:Button cssClass="Granados" OnClick="eventoButton"  ID='LinkButton1' runat="server" Text="Detalles" CommandArgument='<%# Bind("[id_Pedido]")%>' >  </asp:Button>
-                        </itemtemplate>
-                      </asp:templatefield>
+                        
                      </Columns>
                         
                     </asp:GridView>
                     <br />
                     <br />
-                &nbsp;</div>    
+                &nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                </div>    
             
 
 
