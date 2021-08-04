@@ -70,7 +70,7 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center">
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Dar de alta repartidor</a> 
+                    <a style="margin-right: 15px;" href="Registro_repartidor.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Dar de alta repartidor</a> 
                     
                 </div>       
             </div>
@@ -83,7 +83,7 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
+                    <a style="margin-right: 15px;" href="Registro_carinero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
                     
                 </div>       
             </div>

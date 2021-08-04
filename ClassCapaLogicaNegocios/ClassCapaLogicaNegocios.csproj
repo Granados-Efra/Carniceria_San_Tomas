@@ -42,11 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogicaCarnicero.cs" />
     <Compile Include="LogicaEntrega.cs" />
     <Compile Include="LogicaPedido.cs" />
     <Compile Include="LogicaProducto.cs" />
     <Compile Include="LogicaDireccion.cs" />
     <Compile Include="LogicaCliente.cs" />
+    <Compile Include="LogicaRepartidor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

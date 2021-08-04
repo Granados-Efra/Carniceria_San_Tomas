@@ -98,8 +98,10 @@
     <Content Include="Ped_espe_cliente.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Registro_repartidor.aspx" />
     <Content Include="Ver_clientes.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Registro_carnicero.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.aspx.cs">
@@ -187,12 +189,26 @@
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registro_repartidor.aspx.cs">
+      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_repartidor.aspx.designer.cs">
+      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ver_clientes.aspx.cs">
       <DependentUpon>Ver_clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ver_clientes.aspx.designer.cs">
       <DependentUpon>Ver_clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_carnicero.aspx.cs">
+      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_carnicero.aspx.designer.cs">
+      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
