@@ -44,20 +44,86 @@
             &nbsp;</p>
         <p> &nbsp;</p>
 
-        <div style="min-width: 100%; display: flex; margin-bottom: 200px;">
+        <div style="min-width: 100%; display: flex; margin-bottom: 200px; justify-content:center;">
 
-           
-            <div class="info-personal" style="width:52%; display:flex; flex-wrap: wrap !important; justify-content: center;margin-top: 20px;"> 
-                <h3 style="min-width: 100%; display: flex; padding-left: 80%;">Pedidos</h3>  
-                <div style="width: 100%; max-height:200px; overflow: hidden; display: flex;justify-content: center;">
-                    <img style="max-height: 200px;" src="./img/chop.png" alt=""/>
+           <div class="row" >
+
+                
+            <div class="col-md-6 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 20px;"> 
+                <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Pedidos</h3>  
+                <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center; ">
+                    <img style="max-height: 100px; " src="./img/chop.png" alt=""/>
                 </div> 
+
+                 
                 <div style="width: 100%; display:flex; justify-content:center">
-                    <a style="margin-right: 15px;" href="Nuevo_Pedido.aspx" class="btn nuevo_pedido_btn"> <i  style="margin-right:15px;"class="fas fa-shopping-basket"></i> Nuevo Pedido</a> 
-                    <a  style="margin-left: 15px;"  href="Pedidos.aspx" class="btn pedidos_btn"> <i style="margin-right:15px;" class="fas fa-clipboard-list"></i> Ver mis pedidos</a>
+                    <a style="margin-right: 15px;" href="Nuevo_Pedido.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-shopping-basket"></i> Nuevo Pedido</a> 
+                    <a  style="margin-left: 15px;"  href="Pedidos.aspx" class="btn btn-info btn-lg"> <i style="margin-right:15px;" class="fas fa-clipboard-list"></i> Ver mis pedidos</a>
                 </div>       
             </div>
 
+               <div class="col-md-6 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 20px;"> 
+                <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Repartidores</h3>  
+                <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
+                    <img style="max-height: 100px; " src="./img/delivery.png" alt=""/>
+                </div> 
+
+                 
+                <div style="width: 100%; display:flex; justify-content:center">
+                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Dar de alta repartidor</a> 
+                    
+                </div>       
+            </div>
+
+               <div class="col-md-6 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 70px;"> 
+                <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Carniceros</h3>  
+                <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
+                    <img style="max-height: 100px; " src="./img/butcher.png" alt=""/>
+                </div> 
+
+                 
+                <div style="width: 100%; display:flex; justify-content:center"> 
+                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
+                    
+                </div>       
+            </div>
+
+                <div class="col-md-6 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 70px;"> 
+                <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Revisión de despachos y cobros</h3>  
+                <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
+                    <img style="max-height: 100px; " src="./img/find.png" alt=""/>
+                </div> 
+
+                 
+                <div style="width: 100%; display:flex; justify-content:center"> 
+                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen"></i> Despachos de carniceros</a> 
+                    <a style="margin-right: 15px;" href="" class="btn btn-info btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Cobros de repartidores</a> 
+
+                </div>       
+            </div>
+
+               <div class="col-md-12 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 70px;"> 
+                <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Usuarios</h3>  
+                <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
+                    <img style="max-height: 100px; " src="./img/team.png" alt=""/>
+                </div> 
+
+                 
+                <div style="width: 100%; display:flex; justify-content:center"> 
+                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-users"></i> Ver todos los usuarios</a> 
+
+                </div>       
+            </div>
+
+
+
+
+            </div>
+
+
+
+
+          </div>
             
 
         </div>
