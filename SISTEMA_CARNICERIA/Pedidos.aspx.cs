@@ -32,8 +32,8 @@ namespace SISTEMA_CARNICERIA
 
                 string msj = "";
                 GridView1.DataSource = objAccessoPed.ObtenerPedidos(ref msj);
-                GridView1.DataBind();
-
+                GridView1.DataBind();               
+                
          
             }
             else
@@ -42,6 +42,12 @@ namespace SISTEMA_CARNICERIA
 
              
             }
+        }
+        public void eventoButton(object sender, EventArgs e)
+        {
+            string x = ((Button)sender).CommandArgument;
+            Session["id_seleccionado"] = Convert.ToInt32(x);
+            Server.Transfer("Pedido_especifico.aspx");
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

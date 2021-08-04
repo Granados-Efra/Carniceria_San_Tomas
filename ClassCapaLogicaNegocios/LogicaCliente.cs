@@ -113,6 +113,45 @@ namespace ClassCapaLogicaNegocios
             return lista;
 
         }
+        public List<EntidadRepartidor> ObtenerRepartidores(ref string msj_salida)
+        {
+            SqlConnection conexion = null;
+
+            string query = "SELECT * FROM Repartidor";
+
+
+
+            conexion = objectoDeAcceso.AbrirConexion(ref msj_salida);
+
+            SqlDataReader ObtenerDatos = null;
+
+            ObtenerDatos = objectoDeAcceso.ConsultarReader(query, conexion, ref msj_salida);
+
+            List<EntidadRepartidor> lista = new List<EntidadRepartidor>();
+
+
+            if (ObtenerDatos != null)
+            {
+                while (ObtenerDatos.Read())
+                {
+                    lista.Add(new EntidadRepartidor
+                    {
+                        id_Repartidor = (int)ObtenerDatos[0],
+                        nombre = (string)ObtenerDatos[1]
+
+                    });
+                }
+            }
+            else
+            {
+                lista = null;
+            }
+            conexion.Close();
+            conexion.Dispose();
+
+            return lista;
+
+        }
 
 
     }

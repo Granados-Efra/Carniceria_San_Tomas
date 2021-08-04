@@ -44,7 +44,7 @@
                 </div> 
                 <div style="width: 100%; display:flex; justify-content:center">
                     <a style="margin-right: 15px;" href="Nuevo_Pedido.aspx" class="btn nuevo_pedido_btn"> <i  style="margin-right:15px;"class="fas fa-shopping-basket"></i> Nuevo Pedido</a> 
-                    <a  style="margin-left: 15px;"  href="Pedidos.aspx" class="btn pedidos_btn"> <i style="margin-right:15px;" class="fas fa-clipboard-list"></i> Ver pedidos</a>
+                    <a  style="margin-left: 15px;"  href="Pedidos.aspx" class="btn pedidos_btn"> <i style="margin-right:15px;" class="fas fa-clipboard-list"></i> Ver mis pedidos</a>
                 </div>       
             </div>
 

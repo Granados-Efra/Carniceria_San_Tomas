@@ -170,16 +170,14 @@
 
        <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 200px;">
            <h1 style="width: 100%; justify-content: center">Iniciar sesión</h1>
-           <asp:Button CssClass="btn user_btn" ID="Button2" runat="server" Text="Iniciar sesión como:" OnClick="Button2_Click" />
+           <asp:Button style="background-color:#4168e8" CssClass="btn user_btn" ID="Button2" runat="server" Text="Iniciar sesión como:" OnClick="Button2_Click" />
 
-           <div style="width: 100%; justify-content: center; display: flex;">
+           <div style="width: 100%; margin-top:20px; justify-content: center; display: flex;" >
                <asp:DropDownList Style="margin: auto; justify-content: center;" ID="DropDownList1" runat="server" Height="48px" Width="300px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
                <br />
-               <br />
-               <br />
-
-
+             
            </div>
+           <asp:Button style="background-color:#28a029"  CssClass="cambia btn user_btn" ID="Button3" runat="server" OnClick="Button3_Click" Text="Actualizar lista de usuarios" />
 
 
        </div>

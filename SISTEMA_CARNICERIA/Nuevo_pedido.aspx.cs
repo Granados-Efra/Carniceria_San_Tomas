@@ -98,7 +98,7 @@ namespace SISTEMA_CARNICERIA
 
 
             }
-            else if(x == 0 && y == 0)
+            else 
             {
                Boolean isSuccess = objAccesoPed.InsertarPedido(entidad, ref msj);
                 Boolean isSuccess2 = objAccesoProd.InsertarProducto(entidad2, ref msj2);

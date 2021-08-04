@@ -70,6 +70,7 @@
     <Content Include="Address.aspx" />
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
+    <Content Include="Especifico_repartidor.aspx" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
     <Content Include="img\carne.png" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Address.aspx.designer.cs">
       <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_repartidor.aspx.cs">
+      <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_repartidor.aspx.designer.cs">
+      <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

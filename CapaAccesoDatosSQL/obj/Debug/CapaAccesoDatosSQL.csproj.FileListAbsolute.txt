@@ -9,3 +9,4 @@ C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debu
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csproj.CoreCompileInputs.cache
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.dll
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csprojAssemblyReference.cache

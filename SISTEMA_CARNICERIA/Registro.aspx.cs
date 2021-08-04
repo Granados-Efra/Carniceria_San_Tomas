@@ -15,6 +15,8 @@ namespace SISTEMA_CARNICERIA
         LogicaDireccion objAccesoDir = null;
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            
             //Si es falso se está realizando la carga por primera vez
             if (IsPostBack == false)
             {
@@ -24,30 +26,8 @@ namespace SISTEMA_CARNICERIA
                 objAccesoDir = new LogicaDireccion();
                 Session["objAccesoDir"] = objAccesoDir;
 
-                List<EntidadesCliente> mostrarClientes = null;
-
-                string msj = "";
-
-                mostrarClientes = objAccesoClient.ObtenerClientes(ref msj);
-
-                //TextBox13.Text = msj;
-
                 
-
-                if (mostrarClientes!= null)
-                {
-                    DropDownList1.Items.Clear();
-
-                    foreach(EntidadesCliente client in mostrarClientes)
-                    {
-                        DropDownList1.Items.Add(new ListItem(client.nombre.ToString(), client.idCliente.ToString()));
-                        DropDownList1.DataBind();
-                    }
-                }
-                else
-                {
-                    
-                }
+             
 
             }
             else
@@ -56,6 +36,24 @@ namespace SISTEMA_CARNICERIA
 
                 objAccesoDir = (LogicaDireccion)Session["objAccesoDir"];
             }
+            if (!IsPostBack)
+            {
+                List<EntidadesCliente> mostrarClientes = null;
+                string msj = "";
+                mostrarClientes = objAccesoClient.ObtenerClientes(ref msj);
+                if (mostrarClientes != null)
+                {
+
+
+                    foreach (EntidadesCliente client in mostrarClientes)
+                    {
+                        DropDownList1.Items.Add(new ListItem(client.nombre.ToString(), client.idCliente.ToString()));
+                        DropDownList1.DataBind();
+                    }
+                }
+            }
+            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -102,10 +100,7 @@ namespace SISTEMA_CARNICERIA
                     "messg3A", "msgbox3('Algo salió mal...','" + mensaje + " ','error');",
                     true);
             }
-
-
-            //TextBox13.Text = mensaje;
-            //TextBox14.Text = mensaje2;
+            
         }
 
 
@@ -118,11 +113,26 @@ namespace SISTEMA_CARNICERIA
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Session["Nombres"] = DropDownList1.SelectedItem.ToString();
-            Session["ID"] = Convert.ToInt32(DropDownList1.SelectedValue);
-            Server.Transfer("Profile.aspx");
+            if (DropDownList1.SelectedItem!=null)
+            {
+                Session["Nombres"] = DropDownList1.SelectedItem.ToString();
+                Session["ID"] = Convert.ToInt32(DropDownList1.SelectedValue);
+
+                if (DropDownList1.SelectedItem.ToString() == "Nombre")
+                {
+
+                }
+                else
+                {
+                    Server.Transfer("Profile.aspx");
+                }
+            }
+            
         }
 
-        
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Registro.aspx");
+        }
     }
 }

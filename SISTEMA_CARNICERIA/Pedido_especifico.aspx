@@ -52,8 +52,7 @@
                     </asp:GridView>
                     <br />
                     <br />
-                &nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-                </div>    
+                &nbsp;</div>    
             
 
 
