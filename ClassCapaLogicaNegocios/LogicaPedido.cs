@@ -16,7 +16,7 @@ namespace ClassCapaLogicaNegocios
     {
 
         private ClassAccesoSQL objectoDeAcceso =
-         new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+         new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
         public Boolean InsertarPedido(EntidadesPedido entidadPed, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[4];
@@ -91,6 +91,34 @@ namespace ClassCapaLogicaNegocios
                     Datos_salida.Rows.Add(Datos_salida.NewRow());
                    
                    
+
+                }
+
+            }
+
+            return Datos_salida;
+        }
+        public DataTable ObtenerPedidosPorCliente(ref string msj_salida)
+        {
+
+            int id = (int)HttpContext.Current.Session["id_seleccionado_cliente"];
+            string query = "Select PED.id_Pedido as Folio, PED.FechaHora, PED.Pago, P.NombreProd as Producto,P.Peso,P.Cantidad,P.PrecioFinal as Precio,P.NotaEspecial as Notas, CAR.Nombre as Carnicero_Despachador, REP.Nombre as Repartidor from Pedido  AS PED    LEFT JOIN Producto as P on P.F_Pedido=PED.id_Pedido  LEFT JOIN Carnicero as CAR on PED.F_Carnicero= CAR.id_Carnicero  LEFT JOIN EntregaPedido as ENTP on PED.id_Pedido = ENTP.F_Pedido LEFT JOIN Repartidor AS REP on REP.id_Repartidor = ENTP.F_Repartidor where  PED.F_Cliente=" + id + ";";
+
+            DataSet ObtencionEmpleados = null;
+            DataTable Datos_salida = null;
+            ObtencionEmpleados = objectoDeAcceso.ConsultaDS(query, objectoDeAcceso.AbrirConexion(ref msj_salida), ref msj_salida);
+
+            if (ObtencionEmpleados != null)
+            {
+                Datos_salida = ObtencionEmpleados.Tables[0];
+                if (Datos_salida.Rows.Count == 0)
+                {
+                    //La consulta es correcta pero el DataSet no está
+                    //devolviendo registros
+
+                    Datos_salida.Rows.Add(Datos_salida.NewRow());
+
+
 
                 }
 

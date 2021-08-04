@@ -117,9 +117,7 @@ namespace SISTEMA_CARNICERIA
                         "messg3A", "msgbox3('Algo salió mal...','" + msj + " ','error');",
                         true);
                 }
-            }
-          
-
+            }             
         }
     }
 }

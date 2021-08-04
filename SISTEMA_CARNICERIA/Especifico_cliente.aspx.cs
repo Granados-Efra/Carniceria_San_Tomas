@@ -8,11 +8,12 @@ using ClassCapaLogicaNegocios;
 
 namespace SISTEMA_CARNICERIA
 {
-    public partial class Ver_clientes : System.Web.UI.Page
+    public partial class Especifico_cliente : System.Web.UI.Page
     {
-        LogicaCliente objAccessoPed = null;
+        LogicaPedido objAccessoPed = null;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (Session["Nombres"] != null)
             {
 
@@ -27,18 +28,18 @@ namespace SISTEMA_CARNICERIA
 
             if (IsPostBack == false)
             {
-                objAccessoPed = new LogicaCliente();
-                Session["objaccesoCliente"] = objAccessoPed;
+                objAccessoPed = new LogicaPedido();
+                Session["objAccessoPed"] = objAccessoPed;
 
                 string msj = "";
-                GridView1.DataSource = objAccessoPed.ObtenerTodosClientes(ref msj);
+                GridView1.DataSource = objAccessoPed.ObtenerPedidosPorCliente(ref msj);
                 GridView1.DataBind();
 
 
             }
             else
             {
-                objAccessoPed = (LogicaCliente)Session["objaccesoCliente"];
+                objAccessoPed = (LogicaPedido)Session["objAccessoPed"];
 
 
             }
@@ -47,8 +48,8 @@ namespace SISTEMA_CARNICERIA
         public void eventoButton(object sender, EventArgs e)
         {
             string x = ((Button)sender).CommandArgument;
-            Session["id_seleccionado_cliente"] = Convert.ToInt32(x);
-            Server.Transfer("Especifico_cliente.aspx");
+            Session["id_seleccionado"] = Convert.ToInt32(x);
+            Server.Transfer("Ped_espe_cliente.aspx");
         }
         protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
         {

@@ -52,13 +52,16 @@
     
 
                 <div style="width: 60%; display:flex; flex-wrap:wrap; margin-top: 60px;" >  
-
+                    <div>   
+                             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>    
+                        </div>
                     <div style="width:100%; display: flex">
+                        
                         <div class="etiqueta" style="width:20%">
                             <asp:Label Text="Nombre" runat="server" />  
                         </div>
                         <div class="form-group " style="width:40%">
-                            <asp:TextBox style="margin-left:20px"  CssClass="form-control"  ID="TextBox1" runat="server" placeholder="Nombre"  >  </asp:TextBox>
+                            <asp:TextBox  style="margin-left:20px"  CssClass="form-control"  ID="TextBox1" runat="server" placeholder="Nombre"  >  </asp:TextBox>
                         </div>
                     </div>
 
@@ -171,6 +174,10 @@
                         <div style="width:20%;">
                                 <asp:Button CssClass="btn btn-success btn-lg" ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />                                         
                                
+                                <br />
+                                <br />
+                                <br />
+                                                        
                         </div>
                      </div>
                 </div>             

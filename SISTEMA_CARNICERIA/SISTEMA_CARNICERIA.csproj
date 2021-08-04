@@ -71,6 +71,7 @@
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
     <Content Include="Especifico_carnicero.aspx" />
+    <Content Include="Especifico_cliente.aspx" />
     <Content Include="Especifico_repartidor.aspx" />
     <Content Include="img\chop.png" />
     <Content Include="img\pedidos.jpg" />
@@ -89,6 +90,7 @@
     <Content Include="Nuevo_pedido.aspx" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Pedido_especifico.aspx" />
+    <Content Include="Ped_espe_cliente.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Ver_clientes.aspx" />
@@ -108,6 +110,13 @@
     </Compile>
     <Compile Include="Especifico_carnicero.aspx.designer.cs">
       <DependentUpon>Especifico_carnicero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_cliente.aspx.cs">
+      <DependentUpon>Especifico_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_cliente.aspx.designer.cs">
+      <DependentUpon>Especifico_cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Especifico_repartidor.aspx.cs">
       <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
@@ -150,6 +159,13 @@
     </Compile>
     <Compile Include="Pedido_especifico.aspx.designer.cs">
       <DependentUpon>Pedido_especifico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ped_espe_cliente.aspx.cs">
+      <DependentUpon>Ped_espe_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ped_espe_cliente.aspx.designer.cs">
+      <DependentUpon>Ped_espe_cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
