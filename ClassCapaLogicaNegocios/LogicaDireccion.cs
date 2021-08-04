@@ -84,9 +84,10 @@ namespace ClassCapaLogicaNegocios
             };
 
 
-            string sentencia = "INSERT INTO Ubicacion(F_Cliente, Colonia, Calleynumero, Municipio, Ciudad, Referencia, Caracteristica, CP) SELECT MAX(id_Cliente), @colonia, @CalleNumero, @municipio, @ciudad, @referencia, @caracteristica, @cp FROM Cliente; ";
 
-           
+
+            string sentencia = "insert into Ubicacion(Colonia, Calleynumero, Municipio, Ciudad, Referencia, Caracteristica, CP) values(@colonia, @CalleNumero, @municipio, @ciudad, @referencia, @caracteristica, @cp) ";
+
             Boolean salida = false;
 
             salida = objectoDeAcceso.OperacionesSQLConParametros(sentencia, objectoDeAcceso.AbrirConexion(ref mensajeSalida), ref mensajeSalida, parametros);
