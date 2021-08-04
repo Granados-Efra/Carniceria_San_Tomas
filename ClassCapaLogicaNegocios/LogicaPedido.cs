@@ -16,7 +16,7 @@ namespace ClassCapaLogicaNegocios
     {
 
         private ClassAccesoSQL objectoDeAcceso =
-         new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+         new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
         public Boolean InsertarPedido(EntidadesPedido entidadPed, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[4];
