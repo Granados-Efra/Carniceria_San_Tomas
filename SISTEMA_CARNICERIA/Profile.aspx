@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-   <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Carnicería San Tomás</title>
     <link href="../css/profile.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +21,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
+
 </head>
 <body>
-  <form id="form1" runat="server">
+    <form id="form1" runat="server">
   <header>
         <nav>
             <ul>
@@ -68,18 +70,20 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center">
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Dar de alta repartidor</a> 
+                    <a style="margin-right: 15px;" href="Registro_repartidor.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Dar de alta repartidor</a> 
                     
                 </div>       
             </div>
+
                <div class="col-md-6 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 70px;"> 
                 <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Carniceros</h3>  
                 <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
                     <img style="max-height: 100px; " src="./img/butcher.png" alt=""/>
                 </div> 
+
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
+                    <a style="margin-right: 15px;" href="Registro_carnicero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
                     
                 </div>       
             </div>
@@ -92,26 +96,42 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen"></i> Despachos de carniceros</a> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-info btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Cobros de repartidores</a> 
+                    <a style="margin-right: 15px;" href="Especifico_carnicero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen"></i> Despachos de carniceros</a> 
+                    <a style="margin-right: 15px;" href="Especifico_repartidor.aspx" class="btn btn-info btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Cobros de repartidores</a> 
+
                 </div>       
             </div>
+
                <div class="col-md-12 info-personal" style="width:50%; display:flex; flex-wrap: wrap !important; justify-content: center; margin-top: 70px;"> 
                 <h3 style="min-width: 100%; display: flex; justify-content:center; margin-left:0 !important; margin-bottom:50px">Usuarios</h3>  
                 <div style="width: 100%; max-height:250px; overflow: hidden; display: flex; justify-content: center;">
                     <img style="max-height: 100px; " src="./img/team.png" alt=""/>
                 </div> 
+
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-users"></i> Ver todos los usuarios</a> 
+                    <a style="margin-right: 15px;" href="Ver_clientes.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-users"></i> Ver todos los usuarios</a> 
+
                 </div>       
             </div>
+
+
+
+
             </div>
+
+
+
+
           </div>
             
+
         </div>
     </div>
+
     
+
+
     <footer>   
         <div>
             <div style="color: white; display: flex; justify-content: space-around; font-size: 20px; ">

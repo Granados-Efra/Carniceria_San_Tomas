@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntidadCarnicero.cs" />
     <Compile Include="EntidadesRepartidor.cs" />
-    <Compile Include="EntidadesCarnicero.cs" />
+    <Compile Include="EntidadRepartidor.cs" />
+    <Compile Include="EntidadesPedido.cs" />
+    <Compile Include="EntidadesProductos.cs" />
     <Compile Include="EntidadesDireccion.cs" />
     <Compile Include="EntidadesCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

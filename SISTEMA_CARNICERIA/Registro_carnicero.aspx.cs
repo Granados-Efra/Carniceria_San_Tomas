@@ -35,12 +35,12 @@ namespace SISTEMA_CARNICERIA
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            EntidadesCarnicero entidad = new EntidadesCarnicero
+            EntidadCarnicero entidad = new EntidadCarnicero
             {
                 nombre = TextBox1.Text,
                 celular =TextBox2.Text,
                 correo = TextBox3.Text,
-                experiencia = TextBox4.Text
+                exp_anios = Convert.ToInt32(TextBox4.Text)
               
             };
 

@@ -1,17 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pedidos.aspx.cs" Inherits="SISTEMA_CARNICERIA.Pedidos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ped_espe_cliente.aspx.cs" Inherits="SISTEMA_CARNICERIA.Ped_espe_cliente" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
-    <meta charset="UTF-8"/>
+<meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Carnicería San Tomás</title>
     <link href="../css/profile.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
+      
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/codigo.js"></script>
@@ -24,7 +24,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -34,31 +33,28 @@
                      <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                     <li class="logo-central"><img src="./img/vaca.png" alt=""/>
                      </li>
-                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a></li>
+                    <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a>
+                         </li>
+                </ul>
             </nav>
         </header>
 
-
-        
         <div style="min-width: 100%; ">   
-        <div style="width:100%; display: flex;  justify-content: center; margin-top:30px;" >
-           <h1>Tus Pedidos realizados</h1>
+        <div style="width:100%; display: flex;  justify-content: center;">
+           <h1>Detalles del pedido</h1>
         </div>
     </div>
 
         <div style="display:flex; margin-bottom: 15px; justify-content:center">
-          
-            
+               
+
+                
                       <%--  COMIENZA EL DESPLIEGUE DE PEDIDOS EN EL SIGUIENTE DIV --%>
-                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 30px;">                
+                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px;">                
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" CssClass="table table-striped table-bordered">
                   
                      <Columns>
-                         <asp:templatefield headertext="Detalles del pedido" SortExpression="[Id Especifico]">
-                        <itemtemplate>
-                          <asp:Button cssClass="btn btn-dark" OnClick="eventoButton"  ID='LinkButton1' runat="server" Text="Detalles" CommandArgument='<%# Bind("[Folio]")%>' >  </asp:Button>
-                        </itemtemplate>
-                      </asp:templatefield>
+                        
                      </Columns>
                         
                     </asp:GridView>
@@ -69,25 +65,22 @@
 
 
         </div>
-        
-        
-        <div style=" width: 100%; display:flex; justify-content:center; margin-bottom:150px;" >
+          <div style=" width: 100%; display:flex; justify-content:center; margin-bottom:300px;" >
             <div style="width:100%; display:flex; justify-content:center">
-                <a href="Profile.aspx" class="btn btn-danger btn-lg">Regresar</a>  
+                <a href="Especifico_cliente.aspx" class="btn btn-danger btn-lg">Regresar</a>  
             </div>          
         </div>
-        
 
          <footer>   
             <div>
                 <div style="color: white; display: flex; justify-content: space-around; font-size: 20px; ">
-                    <p>Integrantes:</div>
+                    <p>Integrantes: </p></div>
                 <ul>
                     <li>
                         Roman Antonio Isidor Guinto
                     </li>
                     <li>
-                        Pedro De La Cruz Lucas
+                        Pedro Apellido Apellido
                     </li>
                     <li>
                         Efrain Granados Rodríguez

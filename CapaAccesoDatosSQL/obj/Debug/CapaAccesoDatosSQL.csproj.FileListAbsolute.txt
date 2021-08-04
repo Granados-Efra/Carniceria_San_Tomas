@@ -9,3 +9,8 @@ C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debu
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.dll
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.pdb
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debug\CapaAccesoDatosSQL.dll
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debug\CapaAccesoDatosSQL.pdb
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.dll
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.pdb

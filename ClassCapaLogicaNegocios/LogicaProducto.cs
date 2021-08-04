@@ -9,12 +9,13 @@ using System.Data;
 using System.Data.SqlClient;
 namespace ClassCapaLogicaNegocios
 {
-    public class LogicaCliente
+    
+    public class LogicaProducto
     {
-        private ClassAccesoSQL objectoDeAcceso =
-           new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
 
-        public Boolean InsertarCliente(EntidadesCliente entidadClient, ref string mensajeSalida)
+        private ClassAccesoSQL objectoDeAcceso =
+         new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+        public Boolean InsertarProducto(EntidadesProductos entidadProd, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[5];
 
@@ -22,51 +23,48 @@ namespace ClassCapaLogicaNegocios
             {
                 ParameterName = "nombre",
                 SqlDbType = SqlDbType.VarChar,
-                Size=90,
+                Size = 90,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.nombre
+                Value = entidadProd.nombreProd
             };
 
             parametros[1] = new SqlParameter
             {
-                ParameterName = "ApPat",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
+                ParameterName = "peso",
+                SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoPat
+                Value = entidadProd.peso
             };
 
             parametros[2] = new SqlParameter
             {
-                ParameterName = "ApMat",
+                ParameterName = "cantidad",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 90,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.apellidoMat
+                Value = entidadProd.cantidad
 
             };
 
             parametros[3] = new SqlParameter
             {
-                ParameterName = "celular",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 20,
+                ParameterName = "precio",
+                SqlDbType = SqlDbType.Float,  
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.celular
+                Value = entidadProd.precioFin
             };
 
             parametros[4] = new SqlParameter
             {
-                ParameterName = "correo",
+                ParameterName = "nota",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 150,
                 Direction = ParameterDirection.Input,
-                Value = entidadClient.correo
+                Value = entidadProd.nota
             };
 
+            string sentencia = "INSERT INTO Producto(F_Pedido, NombreProd, Peso, Cantidad, PrecioFinal, NotaEspecial) SELECT MAX(id_Pedido), @nombre, @peso, @cantidad, @precio, @nota FROM Pedido; ";
 
-
-            string sentencia = "insert into Cliente values(@nombre, @ApPat, @ApMat, @celular, @correo) ";
 
             Boolean salida = false;
 
@@ -74,7 +72,5 @@ namespace ClassCapaLogicaNegocios
 
             return salida;
         }
-
-
     }
-}
+    }
