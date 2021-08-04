@@ -10,6 +10,20 @@
     <title>Carnicería San Tomás</title>
     <link href="../css/profile.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/codigo.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,24 +38,19 @@
             </nav>
         </header>
 
-        <div style=" width: 100%; display:flex; justify-content:center">
-            <div style="width:100%; display:flex; justify-content:center">
-                <a style="background:#618c61" href="Especifico_cliente.aspx" class="btn user_btn">Regresar</a>  
-            </div>          
+        <div style="min-width: 100%; ">   
+        <div style="width:100%; display: flex;  justify-content: center;">
+           <h1>Detalles de pedidos por cada cliente</h1>
         </div>
+    </div>
 
-        <div style="display:flex; margin-bottom: 250px;">
-                <div class="info-personal" style="width:20%; display:flex; flex-wrap: wrap !important; justify-content: center;margin-top: 20px;"> 
-                        <h3 style="min-width: 100%; display: flex; ">Pedidos realizados</h3>  
-                        <div  style="width: 100%; max-height:200px; overflow: hidden; display: flex;justify-content: center;">
-                            <img style="max-height: 200px;" src="./img/Pedidos.jpg" alt=""/>
-                        </div>        
-                </div>
+        <div style="display:flex; margin-bottom: 15px; justify-content:center">
+               
 
                 
                       <%--  COMIENZA EL DESPLIEGUE DE PEDIDOS EN EL SIGUIENTE DIV --%>
-                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px; background-color:orangered;">                
-                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
+                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px;">                
+                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" CssClass="table table-striped table-bordered">
                   
                      <Columns>
                         
@@ -55,7 +64,11 @@
 
 
         </div>
-        
+          <div style=" width: 100%; display:flex; justify-content:center; margin-bottom:150px;" >
+            <div style="width:100%; display:flex; justify-content:center">
+                <a href="Profile.aspx" class="btn btn-danger btn-lg">Regresar</a>  
+            </div>          
+        </div>
 
          <footer>   
             <div>

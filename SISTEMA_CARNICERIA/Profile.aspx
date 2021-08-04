@@ -110,7 +110,7 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-users"></i> Ver todos los usuarios</a> 
+                    <a style="margin-right: 15px;" href="Ver_clientes.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-users"></i> Ver todos los usuarios</a> 
 
                 </div>       
             </div>

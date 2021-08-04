@@ -34,19 +34,19 @@
                      <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                     <li class="logo-central"><img src="./img/vaca.png" alt=""/>
                      </li>
-                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a>
+                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a></li>
             </nav>
         </header>
 
 
         
         <div style="min-width: 100%; ">   
-        <div style="width:100%; display: flex;  justify-content: center;">
+        <div style="width:100%; display: flex;  justify-content: center; margin-top:30px;" >
            <h1>Pedidos realizados</h1>
         </div>
     </div>
 
-        <div style="display:flex; margin-bottom: 25px; justify-content:center">
+        <div style="display:flex; margin-bottom: 15px; justify-content:center">
           
             
                       <%--  COMIENZA EL DESPLIEGUE DE PEDIDOS EN EL SIGUIENTE DIV --%>
