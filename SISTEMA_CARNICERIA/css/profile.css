@@ -1,9 +1,4 @@
-﻿* {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-body {
+﻿body {
     margin: 0;
     padding: 0;
     background-color: #F4F9F9;
@@ -146,13 +141,3 @@ h1, h2, h3 {
     color: #3f3f3f;
     margin-bottom: 20px;
 }
-
-.label-title {
-    display: flex;
-    margin-left: 40px;
-    font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
-    color: #3f3f3f;
-}
-
-

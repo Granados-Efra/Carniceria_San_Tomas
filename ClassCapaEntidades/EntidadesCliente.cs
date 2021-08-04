@@ -8,7 +8,6 @@ namespace ClassCapaEntidades
 {
     public class EntidadesCliente
     {
-        public int idCliente { set; get; }
         public string nombre  { get; set; }
         public string apellidoPat { get; set; }
         public string apellidoMat { get; set; }

@@ -11,17 +11,7 @@ namespace SISTEMA_CARNICERIA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Nombres"]!=null)
-            {
 
-                string nombre = (string)Session["Nombres"];
-                
-                //TextBox1.Text = nombre;
-            }
-            else
-            {
-                
-            }
         }
     }
 }
