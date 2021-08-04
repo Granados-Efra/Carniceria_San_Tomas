@@ -1,0 +1,22 @@
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.pdb
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csproj.CoreCompileInputs.cache
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.dll
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.dll
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.pdb
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.dll
+C:\Users\anton\Desktop\Carniceria_San_Tomas_design\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.dll
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.pdb
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csprojAssemblyReference.cache
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.dll
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
