@@ -70,12 +70,21 @@
     <Content Include="Address.aspx" />
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
-    <Content Include="img\carnicero.jpg" />
-    <Content Include="img\repartidor.jpg" />
+    <Content Include="Especifico_carnicero.aspx" />
+    <Content Include="Especifico_cliente.aspx" />
+    <Content Include="Especifico_repartidor.aspx" />
+    <Content Include="img\butcher.png" />
+    <Content Include="img\chop.png" />
+    <Content Include="img\delivery.png" />
+    <Content Include="img\find.png" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
     <Content Include="img\carne.png" />
     <Content Include="img\index.jpg" />
+    <Content Include="img\pig.png" />
+    <Content Include="img\press-button.png" />
+    <Content Include="img\team.png" />
+    <Content Include="img\user.png" />
     <Content Include="img\user_info.png" />
     <Content Include="img\vaca.png" />
     <Content Include="Index.aspx" />
@@ -83,11 +92,13 @@
     <Content Include="js\codigo.js" />
     <Content Include="js\JavaScript.js" />
     <Content Include="js\sweetalert2.all.min.js" />
+    <Content Include="Nuevo_pedido.aspx" />
     <Content Include="Pedidos.aspx" />
+    <Content Include="Pedido_especifico.aspx" />
+    <Content Include="Ped_espe_cliente.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
-    <Content Include="Registro_carnicero.aspx" />
-    <Content Include="Registro_repartidor.aspx" />
+    <Content Include="Ver_clientes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +108,27 @@
     </Compile>
     <Compile Include="Address.aspx.designer.cs">
       <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_carnicero.aspx.cs">
+      <DependentUpon>Especifico_carnicero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_carnicero.aspx.designer.cs">
+      <DependentUpon>Especifico_carnicero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_cliente.aspx.cs">
+      <DependentUpon>Especifico_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_cliente.aspx.designer.cs">
+      <DependentUpon>Especifico_cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_repartidor.aspx.cs">
+      <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_repartidor.aspx.designer.cs">
+      <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -112,12 +144,33 @@
     <Compile Include="Info_user.aspx.designer.cs">
       <DependentUpon>Info_user.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Nuevo_pedido.aspx.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nuevo_pedido.aspx.designer.cs">
+      <DependentUpon>Nuevo_pedido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pedidos.aspx.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pedidos.aspx.designer.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido_especifico.aspx.cs">
+      <DependentUpon>Pedido_especifico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedido_especifico.aspx.designer.cs">
+      <DependentUpon>Pedido_especifico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ped_espe_cliente.aspx.cs">
+      <DependentUpon>Ped_espe_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ped_espe_cliente.aspx.designer.cs">
+      <DependentUpon>Ped_espe_cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -134,19 +187,12 @@
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Registro_carnicero.aspx.cs">
-      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
+    <Compile Include="Ver_clientes.aspx.cs">
+      <DependentUpon>Ver_clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registro_carnicero.aspx.designer.cs">
-      <DependentUpon>Registro_carnicero.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Registro_repartidor.aspx.cs">
-      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registro_repartidor.aspx.designer.cs">
-      <DependentUpon>Registro_repartidor.aspx</DependentUpon>
+    <Compile Include="Ver_clientes.aspx.designer.cs">
+      <DependentUpon>Ver_clientes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

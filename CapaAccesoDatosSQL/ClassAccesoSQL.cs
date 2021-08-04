@@ -95,6 +95,43 @@ namespace CapaAccesoDatosSQL
                     contenedor = null;
                     mensaje = "Error!" + a.Message;
                 }
+                
+            }
+            return contenedor;
+        }
+        
+        public SqlDataReader EspecificoRepartidor(string querySql, SqlConnection conAbierta, ref string mensaje)
+        {
+           
+            SqlCommand carrito = null;
+            SqlDataReader contenedor = null;
+
+
+            if (conAbierta == null)
+            {
+                mensaje = "No hay conexion a la BD";            
+            }
+            else
+            {
+
+                carrito = new SqlCommand();
+                carrito.CommandText = querySql;
+                carrito.Connection = conAbierta;
+
+                try
+                {
+
+                    contenedor = carrito.ExecuteReader();
+                    mensaje = "Consulta Correcta DataReader";
+
+                }
+                catch (Exception a)
+                {
+
+                    contenedor = null;
+                    mensaje = "Error!" + a.Message;
+                }
+
             }
             return contenedor;
         }
