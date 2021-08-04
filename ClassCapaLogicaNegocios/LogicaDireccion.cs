@@ -13,7 +13,7 @@ namespace ClassCapaLogicaNegocios
     public class LogicaDireccion
     {
         private ClassAccesoSQL objectoDeAcceso =
-           new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+           new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
 
         public Boolean InsertarDireccion(EntidadesDireccion entidadDir, ref string mensajeSalida)
         {
