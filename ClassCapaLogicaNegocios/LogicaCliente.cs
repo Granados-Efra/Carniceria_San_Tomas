@@ -12,7 +12,7 @@ namespace ClassCapaLogicaNegocios
     public class LogicaCliente
     {
         private ClassAccesoSQL objectoDeAcceso =
-           new ClassAccesoSQL("Data Source=ROMANISIDOR;Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+           new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
 
         public Boolean InsertarCliente(EntidadesCliente entidadClient, ref string mensajeSalida)
         {
