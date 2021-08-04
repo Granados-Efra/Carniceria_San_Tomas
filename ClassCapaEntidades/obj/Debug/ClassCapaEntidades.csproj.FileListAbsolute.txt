@@ -5,7 +5,6 @@ E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCap
 E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.dll
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\bin\Debug\ClassCapaEntidades.pdb
-C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csprojAssemblyReference.cache
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.csproj.CoreCompileInputs.cache
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.dll
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\ClassCapaEntidades\obj\Debug\ClassCapaEntidades.pdb
