@@ -50,12 +50,7 @@ namespace SISTEMA_CARNICERIA
             Server.Transfer("Pedido_especifico.aspx");
         }
 
-        public void eventoButton(object sender, EventArgs e)
-        {
-            string x = ((Button)sender).CommandArgument;
-            Session["id_seleccionado"] = Convert.ToInt32(x);
-            Server.Transfer("Pedido_especifico.aspx");
-        }
+       
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
