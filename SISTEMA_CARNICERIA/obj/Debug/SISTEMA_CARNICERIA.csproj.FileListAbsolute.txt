@@ -202,3 +202,7 @@ C:\Users\deken\Desktop\RepositorioGithub\Carniceria_San_Tomas\SISTEMA_CARNICERIA
 C:\Users\deken\Desktop\RepositorioGithub\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.csproj.CopyComplete
 C:\Users\deken\Desktop\RepositorioGithub\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.dll
 C:\Users\deken\Desktop\RepositorioGithub\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.pdb
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.csprojAssemblyReference.cache
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.csproj.CoreCompileInputs.cache
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.dll
+C:\Users\deken\Desktop\Pruebas\Nuevo main\Carniceria_San_Tomas\SISTEMA_CARNICERIA\obj\Debug\SISTEMA_CARNICERIA.pdb
