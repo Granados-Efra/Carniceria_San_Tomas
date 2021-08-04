@@ -19,6 +19,8 @@
             <ul>
                  <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                 <li class="logo-central"><img src="./img/vaca.png" alt=""/></li>
+                <li class="user"><a class="a-nav" href="Registro_carnicero.aspx"><i style="margin-right: 4px;" class="far fa-knife-kitchen"></i>Registrar Carnicero</a></li>
+                <li class="user"><a class="a-nav" href="Registro_repartidor.aspx"><i style="margin-right: 4px;" class="far fa-motorcycle"></i>Registrar Repartidor</a></li>
                  <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
             </ul>
         </nav>
@@ -28,7 +30,7 @@
         <h1> Perfil de usuario</h1>
         <h2> ¡Bienvenido Mario!</h2>
 
-        <div style="min-width: 100%; display: flex; margin-bottom: 200px;">
+        <div style="min-width: 100%; display: flex; margin-bottom: 300px;">
 
            
             <div class="info-personal" style="width:52%; display:flex; flex-wrap: wrap !important; justify-content: center;margin-top: 20px;"> 

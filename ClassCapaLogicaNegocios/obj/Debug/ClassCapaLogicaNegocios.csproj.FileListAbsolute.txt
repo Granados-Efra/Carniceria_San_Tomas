@@ -1,0 +1,11 @@
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaLogicaNegocios.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaLogicaNegocios.pdb
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\CapaAccesoDatosSQL.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaEntidades.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\CapaAccesoDatosSQL.pdb
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\bin\Debug\ClassCapaEntidades.pdb
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.AssemblyReference.cache
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.CoreCompileInputs.cache
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.csproj.CopyComplete
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.dll
+E:\repos_visualstudio\Carniceria_San_Tomas\ClassCapaLogicaNegocios\obj\Debug\ClassCapaLogicaNegocios.pdb
