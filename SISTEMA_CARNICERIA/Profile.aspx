@@ -83,7 +83,7 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="Registro_carinero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
+                    <a style="margin-right: 15px;" href="Registro_carnicero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen""></i> Dar de alta carnicero</a> 
                     
                 </div>       
             </div>

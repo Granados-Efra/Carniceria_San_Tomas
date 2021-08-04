@@ -15,7 +15,7 @@ namespace ClassCapaLogicaNegocios
 
         private ClassAccesoSQL objectoDeAcceso =
            new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
-        public Boolean InsertarCarnicero(EntidadesCarnicero entidadCarnicero, ref string mensajeSalida)
+        public Boolean InsertarCarnicero(EntidadCarnicero entidadCarnicero, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[4];
 
@@ -52,7 +52,7 @@ namespace ClassCapaLogicaNegocios
                 ParameterName = "experiencia_anios",
                 SqlDbType = SqlDbType.SmallInt,
                 Direction = ParameterDirection.Input,
-                Value = entidadCarnicero.experiencia
+                Value = entidadCarnicero.exp_anios
             };
 
             string sentencia = "insert into Carnicero values(@nombre, @celular, @correo, @experiencia_anios) ";
