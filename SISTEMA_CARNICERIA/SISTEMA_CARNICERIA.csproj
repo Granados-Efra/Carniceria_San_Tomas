@@ -72,12 +72,17 @@
     <Content Include="css\index.css" />
     <Content Include="Especifico_carnicero.aspx" />
     <Content Include="Especifico_repartidor.aspx" />
+    <Content Include="img\butcher.png" />
     <Content Include="img\chop.png" />
+    <Content Include="img\delivery.png" />
+    <Content Include="img\find.png" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
     <Content Include="img\carne.png" />
     <Content Include="img\index.jpg" />
+    <Content Include="img\pig.png" />
     <Content Include="img\press-button.png" />
+    <Content Include="img\team.png" />
     <Content Include="img\user.png" />
     <Content Include="img\user_info.png" />
     <Content Include="img\vaca.png" />
