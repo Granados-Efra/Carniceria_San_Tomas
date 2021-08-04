@@ -33,14 +33,15 @@
                      <li class="logo"><a class="a-nav" href="Index.aspx"><img  src="./img/carne.png" alt=""/></a> <a class="a-nav" href="Index.aspx">Carnicería San Tomás</a>  </li>
                     <li class="logo-central"><img src="./img/vaca.png" alt=""/>
                      </li>
-                     <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i>Mario</a></li>
+                    <li class="user"><a class="a-nav" href="Profile.aspx"><i style="margin-right: 4px;" class="far fa-user"></i><%=Session["Nombres"].ToString()%></a>
+                         </li>
                 </ul>
             </nav>
         </header>
 
         <div style="min-width: 100%; ">   
         <div style="width:100%; display: flex;  justify-content: center;">
-           <h1>Detalles de pedidos por cada cliente</h1>
+           <h1>Detalles del pedido</h1>
         </div>
     </div>
 
@@ -64,9 +65,9 @@
 
 
         </div>
-          <div style=" width: 100%; display:flex; justify-content:center; margin-bottom:150px;" >
+          <div style=" width: 100%; display:flex; justify-content:center; margin-bottom:300px;" >
             <div style="width:100%; display:flex; justify-content:center">
-                <a href="Profile.aspx" class="btn btn-danger btn-lg">Regresar</a>  
+                <a href="Especifico_cliente.aspx" class="btn btn-danger btn-lg">Regresar</a>  
             </div>          
         </div>
 

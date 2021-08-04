@@ -44,15 +44,13 @@
 
        
         <div style="display:flex; margin-bottom: 15px; justify-content:center">
-
-         <div class="info-personal" style="width:20%; display:flex; flex-wrap: wrap !important; justify-content: center;margin-top: 20px;"> 
-                        <h3 style="min-width: 100%; display: flex; ">Pedidos realizados del cliente <%=Session["Nombres"].ToString()%></h3>  
-                            
-                </div>
+             
+         
 
                 
                       <%--  COMIENZA EL DESPLIEGUE DE PEDIDOS EN EL SIGUIENTE DIV --%>
-                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px;" >                
+                <div style="width: 80%; display:flex; flex-wrap:wrap; margin-top: 60px;" >     
+                    <h3 style="min-width: 100%; display: flex; ">Pedidos realizados del cliente <%=Session["Nombres"].ToString()%></h3>
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" CssClass="table table-striped table-bordered">
                   
                      <Columns>

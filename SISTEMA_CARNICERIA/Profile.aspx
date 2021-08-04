@@ -96,8 +96,8 @@
 
                  
                 <div style="width: 100%; display:flex; justify-content:center"> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen"></i> Despachos de carniceros</a> 
-                    <a style="margin-right: 15px;" href="" class="btn btn-info btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Cobros de repartidores</a> 
+                    <a style="margin-right: 15px;" href="Especifico_carnicero.aspx" class="btn btn-danger btn-lg"> <i  style="margin-right:15px;"class="fas fa-knife-kitchen"></i> Despachos de carniceros</a> 
+                    <a style="margin-right: 15px;" href="Especifico_repartidor.aspx" class="btn btn-info btn-lg"> <i  style="margin-right:15px;"class="fas fa-motorcycle""></i> Cobros de repartidores</a> 
 
                 </div>       
             </div>

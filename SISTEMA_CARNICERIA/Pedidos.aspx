@@ -42,7 +42,7 @@
         
         <div style="min-width: 100%; ">   
         <div style="width:100%; display: flex;  justify-content: center; margin-top:30px;" >
-           <h1>Pedidos realizados</h1>
+           <h1>Tus Pedidos realizados</h1>
         </div>
     </div>
 
