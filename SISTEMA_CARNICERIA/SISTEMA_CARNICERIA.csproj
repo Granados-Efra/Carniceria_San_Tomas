@@ -70,6 +70,7 @@
     <Content Include="Address.aspx" />
     <Content Include="css\profile.css" />
     <Content Include="css\index.css" />
+    <Content Include="Especifico_carnicero.aspx" />
     <Content Include="Especifico_repartidor.aspx" />
     <Content Include="img\pedidos.jpg" />
     <Content Include="img\address.jpg" />
@@ -87,6 +88,7 @@
     <Content Include="Pedido_especifico.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="Ver_clientes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +98,13 @@
     </Compile>
     <Compile Include="Address.aspx.designer.cs">
       <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Especifico_carnicero.aspx.cs">
+      <DependentUpon>Especifico_carnicero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Especifico_carnicero.aspx.designer.cs">
+      <DependentUpon>Especifico_carnicero.aspx</DependentUpon>
     </Compile>
     <Compile Include="Especifico_repartidor.aspx.cs">
       <DependentUpon>Especifico_repartidor.aspx</DependentUpon>
@@ -153,6 +162,13 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ver_clientes.aspx.cs">
+      <DependentUpon>Ver_clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ver_clientes.aspx.designer.cs">
+      <DependentUpon>Ver_clientes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

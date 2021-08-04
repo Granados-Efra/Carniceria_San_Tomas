@@ -16,7 +16,7 @@ namespace ClassCapaLogicaNegocios
     {
 
         private ClassAccesoSQL objectoDeAcceso =
-         new ClassAccesoSQL("Data Source=ROMANISIDOR; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
+         new ClassAccesoSQL("Data Source=DESKTOP-4UCILN2\\SQLEXPRESS; Initial Catalog=PedidosCarniceria; Integrated Security = true;");
         public Boolean InsertarPedido(EntidadesPedido entidadPed, ref string mensajeSalida)
         {
             SqlParameter[] parametros = new SqlParameter[4];
@@ -142,6 +142,34 @@ namespace ClassCapaLogicaNegocios
 
                     Datos_salida.Rows.Add(Datos_salida.NewRow());
                     
+
+
+
+                }
+
+            }
+            return Datos_salida;
+        }
+        public DataTable ObtenerEspecificoCarnicero(ref string msj_salida, ref string fecha_comparar, ref int carnicero_comparar)
+        {
+
+            DataSet ObtencionEmpleados = null;
+            DataTable Datos_salida = null;
+
+            //int id = (int)HttpContext.Current.Session["id_seleccionado"];
+            string query = "Select COUNT(*) as Pedidos_Despachacos from Pedido WHERE  CAST(FechaHora AS DATE)='"+fecha_comparar+"' and F_Carnicero ='"+carnicero_comparar+"';";
+
+            ObtencionEmpleados = objectoDeAcceso.ConsultaDS(query, objectoDeAcceso.AbrirConexion(ref msj_salida), ref msj_salida);
+            if (ObtencionEmpleados != null)
+            {
+                Datos_salida = ObtencionEmpleados.Tables[0];
+                if (Datos_salida.Rows.Count == 0)
+                {
+                    //La consulta es correcta pero el DataSet no está
+                    //devolviendo registros
+
+                    Datos_salida.Rows.Add(Datos_salida.NewRow());
+
 
 
 
