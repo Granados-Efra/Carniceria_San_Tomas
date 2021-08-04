@@ -3,7 +3,6 @@ E:\repos_visualstudio\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debug\CapaAcce
 E:\repos_visualstudio\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csproj.CoreCompileInputs.cache
 E:\repos_visualstudio\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.dll
 E:\repos_visualstudio\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.pdb
-E:\repos_visualstudio\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csproj.AssemblyReference.cache
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debug\CapaAccesoDatosSQL.dll
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\bin\Debug\CapaAccesoDatosSQL.pdb
 C:\Users\deken\Documents\GitHub\Carniceria_San_Tomas\CapaAccesoDatosSQL\obj\Debug\CapaAccesoDatosSQL.csproj.CoreCompileInputs.cache

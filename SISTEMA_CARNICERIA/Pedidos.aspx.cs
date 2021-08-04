@@ -49,7 +49,8 @@ namespace SISTEMA_CARNICERIA
             Session["id_seleccionado"] = Convert.ToInt32(x);
             Server.Transfer("Pedido_especifico.aspx");
         }
-     
+
+       
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
